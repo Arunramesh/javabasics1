@@ -1,0 +1,17 @@
+
+	public class Demo2
+{
+public static void main( String[] args )
+{
+int count=2;
+boolean abc=count>0 ? true : false;
+System.out.println(abc);
+}
+}
+
+
+--------------------------------------
+output is:
+true
+
+

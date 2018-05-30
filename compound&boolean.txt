@@ -1,0 +1,14 @@
+package com.basic;
+
+public class Demo2 {
+	public static void main(String s[]) {
+	
+	int a=2,b=5;
+	a +=b;
+	 System.out.println(a);
+	 boolean answer=false;
+	 System.out.println(!answer);
+
+}
+
+}

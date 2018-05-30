@@ -1,0 +1,14 @@
+package com.basic;
+
+public class Demo2 {
+	public static void main(String s[]) {
+	
+	int a=5,b=10;
+ System.out.println(a > b);
+ System.out.println(a <= b);
+ System.out.println(a >= b);
+ System.out.println(a == b);
+
+}
+
+}

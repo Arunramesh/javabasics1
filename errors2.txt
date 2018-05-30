@@ -1,0 +1,13 @@
+public class Demo2 {
+	public static void main(String s[]) {
+		int x=0,total=0;
+		while ( x <= 100 ) {
+			total += x;
+			System.out.println(total);
+			++x;
+
+
+	}
+	}
+}
+

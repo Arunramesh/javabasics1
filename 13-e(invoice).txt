@@ -1,0 +1,63 @@
+package invoice;
+
+class InvoiceDetails{
+	String partnumber;
+	String partdescription;;
+	int itemquantity;
+	double total,itemprice;
+		
+	public String getPartnumber() {
+		return partnumber;
+	}
+	public void setPartnumber(String partnumber) {
+		this.partnumber = partnumber;
+	}
+	public String getPartdescription() {
+		return partdescription;
+	}
+	public void setPartdescription(String partdescription) {
+		this.partdescription = partdescription;
+	}
+	public int getItemquantity() {
+		return itemquantity;
+	}
+	public void setItemquantity(int itemquantity) {
+		this.itemquantity = itemquantity;
+	}
+	public double getTotal() {
+		return total;
+	}
+	public void setTotal() {
+		if(itemquantity>0 && itemprice>0)
+		{
+		this.total = itemquantity*itemprice;
+		System.out.println("Total Cost:"+total);
+		}
+		else 
+			System.out.println("invalid quantity or price-0");
+		}
+		
+	public double getItemprice() {
+		return itemprice;
+	}
+	public void setItemprice(double itemprice) {
+		this.itemprice = itemprice;
+	}
+	
+	
+	
+}
+public class invoice
+{
+	public static void main(String s[]) {
+		InvoiceDetails in=new InvoiceDetails();
+		in.setPartdescription("chocolate");
+		in.setItemquantity(8);
+		in.setItemprice(5);
+		System.out.println(in.getPartdescription());
+		System.out.println(in.getItemquantity());
+		System.out.println(in.getItemprice());
+		in.setTotal();
+	}
+}
+

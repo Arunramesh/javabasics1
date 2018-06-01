@@ -1,0 +1,21 @@
+package invoice;
+
+
+	public class Car
+	{
+		
+		
+		
+		public boolean isMultiple(int num1,int num2) {
+			return num2%num1 == 0? true: false;
+			
+			}
+		
+		public static void main(String[] args) {
+			Car m1=new Car();
+			
+			System.out.println(m1.isMultiple(5, 2));
+
+}
+	
+}

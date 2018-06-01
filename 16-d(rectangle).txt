@@ -1,0 +1,41 @@
+public class Rectangle {
+	int length;
+	int width;
+	
+	
+	public int getLength() {
+		return length;
+	}
+	public void setLength(int width,int length) {
+		if(width>0 && width<20 && length>0 && length<20) {
+			System.out.println("The values are valid..");
+		}
+		else {
+			System.out.println("The initialized values are invalid..");
+		}
+		this.width=width;
+		this.length = length;
+		
+	}
+	
+	
+	
+	public void recArea(int a,int b){
+		int recArea=a*b;
+		System.out.println("Area:"+recArea);
+		
+	}
+	public void recPeri(int a,int b) {
+		int recPeri=2*(a+b);
+		System.out.println("Perimeter:"+recPeri);
+		
+	}
+
+	public static void main(String[] args) {
+		Rectangle v1=new Rectangle();
+		v1.setLength(2,13);
+		System.out.println(v1.getLength());
+		v1.recArea(40,32);
+		v1.recPeri(3,2);
+	}
+}

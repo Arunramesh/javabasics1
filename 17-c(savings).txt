@@ -1,0 +1,32 @@
+public class SavingsAccount {
+	static double annualIntRate;
+	private double savingsBalance; 
+	public static double getAnnualIntRate() {
+		return annualIntRate;
+	}
+	public static void setAnnualIntRate(double annualIntRate) {
+		SavingsAccount.annualIntRate = annualIntRate/100;
+	}
+	public double getSavingsBalance() {
+		return savingsBalance;
+	}
+	public void setSavingsBalance(double savingsBalance) {
+		this.savingsBalance = savingsBalance;
+	}
+	public double calMonthlyInt() {
+		double calMonthlyInt=(savingsBalance*annualIntRate)/12;
+		savingsBalance=savingsBalance+calMonthlyInt;
+		return savingsBalance;
+	}
+	public static void main(String[] args) {
+		SavingsAccount s1=new SavingsAccount();
+		SavingsAccount s2=new SavingsAccount();
+		s1.setAnnualIntRate(4);
+		s1.setSavingsBalance(2000);
+		System.out.println(s1.calMonthlyInt());
+		s2.setAnnualIntRate(4);
+		s2.setSavingsBalance(3000);
+		System.out.println(s2.calMonthlyInt());
+	}
+
+}

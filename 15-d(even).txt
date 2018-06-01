@@ -1,0 +1,13 @@
+package invoice;
+
+public class even {
+public boolean isEven(int num1){
+	return  num1 %2 ==0 ? true : false ;
+	
+}
+public static void main(String[] args) {
+	even process=new even();
+	System.out.println(process.isEven(5));
+}
+
+}

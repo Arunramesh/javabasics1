@@ -1,0 +1,26 @@
+public class temp {
+
+	double cel;
+	double fah;
+	
+	public double getCel() {
+		return cel;
+	}
+	public void setCel(double cel) {
+		this.cel = cel;
+	}
+	public double getFah() {
+		 return cel=5.0 / 9.0 * ( fah - 32 );
+	}
+	public void setFah(double fah) {
+		this.fah = fah;
+	}
+	public void celsius(double fah) {
+		this.fah=fah;
+		
+	}
+	public static void main(String[] args) {
+		temp t1=new temp();
+		t1.setFah(35.0);
+		System.out.println(t1.getFah());	}
+}

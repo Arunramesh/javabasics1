@@ -1,0 +1,45 @@
+package Car.slm.org;
+
+public class Cars {
+    public String name;
+	public String model;
+	
+	public Cars() {
+		this( "audi","A4");
+		System.out.println("empty cons of car ");
+	}
+	public Cars(String name) {
+		
+		System.out.println("1 arg con of car");
+	}
+	public Cars(String name,String model) {
+		this("CarName");
+		System.out.println("2 arg cons of car");
+	}
+	
+	public static void main(String[] args) {
+		Cars car=new Cars("bmw");
+		
+		
+	}
+	
+
+}
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+package Car.slm.org;
+
+public class SportsCar1 extends Cars {
+	String carType;
+	String sourceOfCar;
+	public SportsCar1() {
+		System.out.println("empty cons in sportscar ");
+	}
+	public SportsCar1(String carType,String sourceOfCar) {
+		System.out.println("2 arg cons of sports");
+	}
+	
+public static void main(String[] args) {
+	SportsCar1 c1=new SportsCar1("Sedon","India");
+	
+}
+}

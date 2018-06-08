@@ -1,0 +1,134 @@
+package com.java.interfaces;
+
+public interface Travel {
+	public int getSpeed();
+	
+
+}
+- - - - - - - - - - - - - - - - - - -
+package com.java.interfaces;
+
+public interface Owner {
+	public String ownerName();
+
+}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - 
+package com.java.interfaces;
+
+public abstract class Vehicle implements Travel,Owner{
+
+	@Override
+	public int getSpeed() {
+		
+		return 0;
+	}
+
+}
+
+ class Cycle extends Vehicle{
+	 
+	@Override
+	public int getSpeed() {
+		return super.getSpeed();
+	}
+
+	@Override
+	public String ownerName() {
+		return null;
+	}
+	
+}
+ class Bus extends Vehicle {
+	 @Override
+		public int getSpeed() {
+			return super.getSpeed();
+		}
+
+	@Override
+	public String ownerName() {
+		return null;
+	}
+	 
+ }
+ class TriCycle extends Vehicle{
+	 @Override
+		public int getSpeed() {
+			return super.getSpeed();
+		}
+
+	@Override
+	public String ownerName() {
+		return null;
+	}
+ }
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+package com.java.interfaces;
+
+public abstract class Animal implements Travel,Owner{
+
+	@Override
+	public int getSpeed() {
+		
+		return 0;
+	}
+
+}
+class Dog extends Animal{
+	@Override
+	public int getSpeed() {
+				return super.getSpeed();
+	}
+
+	@Override
+	public String ownerName() {
+		
+		return null;
+	}
+}
+class Cat extends Animal{
+	@Override
+	public int getSpeed() {
+		return super.getSpeed();
+	}
+
+	@Override
+	public String ownerName() {
+		return null;
+	}
+	
+}
+class Rabbit extends Animal{
+	@Override
+	public int getSpeed() {
+		return super.getSpeed();
+	}
+
+	@Override
+	public String ownerName() {
+		return null;
+	}
+}
+- - - - - - - - - - - - - - - - 
+package com.java.interfaces;
+
+public  class Test  {
+	
+	public static void main(String[] args) {
+		Travel travelOne=new TriCycle();
+		Travel travelTwo=new Bus();
+		Travel travelThree=new Cycle();
+		Travel travelFour=new Dog();
+		Travel travelFive=new Cat();
+		Travel travelSix=new Rabbit();
+		System.out.println(travelOne instanceof TriCycle);
+		System.out.println(travelTwo instanceof Bus);
+		System.out.println(travelThree instanceof Dog);
+		System.out.println(travelFour instanceof Dog);
+		System.out.println(travelFive instanceof Cat);
+		System.out.println(travelSix instanceof TriCycle);
+		
+		Owner owner=(Cycle)travelThree;
+		}
+
+}

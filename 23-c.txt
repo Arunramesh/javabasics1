@@ -1,0 +1,106 @@
+package com.java.interfaces;
+
+public interface Travel {
+	public int getSpeed();
+
+}
+
+- - - - - - - - - - - - - - - - - - - - 
+package com.java.interfaces;
+
+public class Vehicle implements Travel{
+
+	@Override
+	public int getSpeed() {
+		
+		return 0;
+	}
+
+}
+ class Cycle extends Vehicle{
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return super.getSpeed();
+	}
+	
+}
+ class Bus extends Vehicle {
+	 @Override
+		public int getSpeed() {
+			// TODO Auto-generated method stub
+			return super.getSpeed();
+		}
+	 
+ }
+ class TriCycle extends Vehicle{
+	 @Override
+		public int getSpeed() {
+			// TODO Auto-generated method stub
+			return super.getSpeed();
+		}
+ }
+- - - - - - - - - - - - - - - - - - - - 
+package com.java.interfaces;
+
+public class Animal implements Travel{
+
+	@Override
+	public int getSpeed() {
+		
+		return 0;
+	}
+
+}
+class Dog extends Animal{
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return super.getSpeed();
+	}
+}
+class Cat extends Animal{
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return super.getSpeed();
+	}
+	
+}
+class Rabbit extends Animal{
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return super.getSpeed();
+	}
+}
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+package com.java.interfaces;
+
+public  class Test  {
+	
+	public static void main(String[] args) {
+		Travel travelOne=new TriCycle();
+		Travel travelTwo=new Bus();
+		Travel travelThree=new Cycle();
+		Travel travelFour=new Dog();
+		Travel travelFive=new Cat();
+		Travel travelSix=new Rabbit();
+		System.out.println(travelOne instanceof TriCycle);
+		System.out.println(travelTwo instanceof Bus);
+		System.out.println(travelThree instanceof Dog);
+		System.out.println(travelFour instanceof Dog);
+		System.out.println(travelFive instanceof Cat);
+		System.out.println(travelSix instanceof TriCycle);
+		}
+
+}
+- - - - - - - - - - - - - - - - - - - - - 
+output:
+true
+true
+false
+true
+true
+false
